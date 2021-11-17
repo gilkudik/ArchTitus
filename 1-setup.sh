@@ -61,12 +61,11 @@ PKGS=(
 'xorg-drivers'
 'xorg-xkill'
 'xorg-xinit'
-'xterm'
 'plasma-desktop' # KDE Load second
 'alsa-plugins' # audio plugins
 'alsa-utils' # audio utils
 'ark' # compression
-'audiocd-kio' 
+'audiocd-kio'
 'autoconf' # build
 'automake' # build
 'base'
@@ -103,7 +102,6 @@ PKGS=(
 'fuseiso'
 'gamemode'
 'gcc'
-'gimp' # Photo editing
 'git'
 'gparted' # partition management
 'gptfdisk'
@@ -126,7 +124,6 @@ PKGS=(
 'kscreen'
 'kvantum-qt5'
 'kitty'
-'konsole'
 'kscreen'
 'layer-shell-qt'
 'libdvdcss'
@@ -168,7 +165,6 @@ PKGS=(
 'python-psutil'
 'python-pyqt5'
 'python-pip'
-'qemu'
 'rsync'
 'sddm'
 'sddm-kcm'
@@ -186,13 +182,8 @@ PKGS=(
 'unzip'
 'usbutils'
 'vim'
-'virt-manager'
-'virt-viewer'
 'wget'
 'which'
-'wine-gecko'
-'wine-mono'
-'winetricks'
 'xdg-desktop-portal-kde'
 'xdg-user-dirs'
 'zeroconf-ioslave'
@@ -241,7 +232,7 @@ echo "username=$username" >> ${HOME}/ArchTitus/install.conf
 fi
 if [ $(whoami) = "root"  ];
 then
-    useradd -m -G wheel,libvirt -s /bin/bash $username 
+    useradd -m -G wheel -s /bin/bash $username 
 	passwd $username
 	cp -R /root/ArchTitus /home/$username/
     chown -R $username: /home/$username/ArchTitus
