@@ -83,7 +83,6 @@ PKGS=(
 'btrfs-progs'
 'celluloid' # video players
 'cmatrix'
-'code' # Visual Studio code
 'cronie'
 'cups'
 'dialog'
